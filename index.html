@@ -15,62 +15,61 @@
         </div>
         <div class="parteuno">
             <h2>Parte Uno</h2>
-            <img src="https://picsum.photos/400" alt="Random img">
+            <img id="fotouno" src="/assets/img/49-400x400.jpg" alt="Random img" >
             <div class="botones">
-                <button>Añadir Marco</button>
-                <button>Eliminar Marco</button>
+                <button id="botonuno"">Añadir Marco</button>
             </div>
             
         </div>
         <div class="partedos">
-            <h2>Parte Dos</h2>
-                <div class="container-parte-dos">
-                    <div class="img-uno">
-                        <img src="./assets/img/stickeruno.png" alt="stickeruno">
-                        <form action="/action_page.php">
-                            <label for="quantity">Quantity (between 1 and 5):</label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="5">
-                            <input type="submit">
-                        </form>
-                    </div>
+            <div class="container-parte-dos">
+                <div class="img-uno">
+                    <img src="./assets/img/stickeruno.png" alt="stickeruno">
+                    <form>
+                        <label for="Cantidad">Cantidad:</label>
+                        <input type="number" id="cantidaduno" name="Cantidad" min="1" max="99">
+                    </form>
                 </div>
-                <div class="container-parte-dos">
-                    <div class="img-dos">
-                        <img src="./assets/img/stickeruno.png" alt="stickeruno">
-                        <form action="/action_page.php">
-                            <label for="quantity">Quantity (between 1 and 5):</label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="5">
-                            <input type="submit">
-                        </form>
-                    </div>
+                <div class="img-dos">
+                    <img src="./assets/img/stickeruno.png" alt="stickeruno">
+                    <form>
+                        <label for="Cantidad">Cantidad:</label>
+                        <input type="number" id="cantidaddos" name="Cantidad" min="1" max="99">
+                    </form>
                 </div>
-                <div class="container-parte-dos">
-                    <div class="img-tres">
-                        <img src="./assets/img/stickeruno.png" alt="stickeruno">
-                        <form action="/action_page.php">
-                            <label for="quantity">Quantity (between 1 and 5):</label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="5">
-                            <input type="submit">
-                        </form>
-                    </div>
-                </div>
+                <div class="img-tres">
+                    <img src="./assets/img/stickeruno.png" alt="stickeruno">
+                    <form>
+                        <label for="Cantidad">Cantidad:</label>
+                        <input type="number" id="cantidadtres" name="Cantidad" min="1" max="99">
+                    </form>
+                </div> 
+            </div>
+            <div>
+                <h1 id="respuesta">&nbsp;</h1>
+                <button id="botondos">INGRESAR</button>
             </div>
         </div>
         <div class="partetres">
             <div class="container-parte-tres">
                 <h2>Parte Tres</h2>
                 <h3>Ingresa el password</h3>
-                <form action="/action_page.php">
-                    <label for="cars">Choose a car:</label>
-                    <select name="cars" id="cars">
-                    <option value="1">2</option><option value="saab">Saab</option><option value="opel">Opel</option><option value="audi">Audi</option>
+
+                    <select name="numerouno" id="numerouno">
+                        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    </select>
+                    <select name="numerodos" id="numerodos">
+                        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    </select>
+                    <select name="numerotres" id="numerotres">
+                        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
                     </select>
                     <br><br>
-                    <input type="submit" value="Submit">
-                  </form>
-                  
+                    <h1 id="respuestados">&nbsp;</h1>
+                    <button id="botontres">INGRESAR</button>
             </div>
         </div>
     </div>
+    <script src="/assets/js/condiciones.js"></script>
 </body>
 </html>
